@@ -1,0 +1,10 @@
+<ul>
+<%  @restaurants.each do |restaurant| %>
+    <li>
+        <%= restaurant.name %> <br>
+        <% unless restaurant.typerestaurant.nil? %>
+          type : <%= restaurant.typerestaurant.name %>
+        <% end %>
+    </li>
+<% end %> 
+</ul>
